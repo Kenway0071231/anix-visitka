@@ -3,90 +3,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANIX — Платформа аренды спецтехники</title>
+    <title>ANIX — Цифровая платформа аренды спецтехники</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Подключаем шрифт Inter для современного вида -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Шапка с логотипом -->
+    <!-- Шапка с навигацией -->
     <header class="header">
         <div class="container">
-            <div class="logo">ANIX</div>
+            <div class="header-content">
+                <div class="logo">ANIX</div>
+                <nav class="nav">
+                    <a href="#problem" class="nav-link">Проблема</a>
+                    <a href="#solution" class="nav-link">Решение</a>
+                    <a href="#market" class="nav-link">Рынок</a>
+                    <a href="#contacts" class="nav-link">Контакты</a>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <!-- Главный экран -->
+    <!-- Главный экран с акцентом на ценность -->
     <section class="hero">
         <div class="container">
-            <h1 class="hero-title">ПЛАТФОРМА АРЕНДЫ<br>СПЕЦТЕХНИКИ</h1>
-            <p class="hero-subtitle">Новый цифровой стандарт аренды. Технологии, безопасность и удобство в одном решении.</p>
-        </div>
-    </section>
-
-    <!-- Блок с фактами -->
-    <section class="problems">
-        <div class="container">
-            <h2 class="section-title">Рынок с дырявым дном:<br>5 фактов о рынке</h2>
-            <div class="facts-grid">
-                <div class="fact-card">Долгий поиск техники</div>
-                <div class="fact-card">Суды и неоплаты</div>
-                <div class="fact-card">Конфликты и обман</div>
-                <div class="fact-card">Простои техники</div>
-                <div class="fact-card">Непрозрачные расчеты</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Наши решения -->
-    <section class="solutions">
-        <div class="container">
-            <h2 class="section-title">Превращаем рыночные потери в доходность</h2>
-            <div class="solutions-grid">
-                <div class="solution-item">
-                    <div class="solution-icon">🔍</div>
-                    <h3>Устраняем долгий поиск</h3>
-                    <p>Мгновенный подбор техники под ваши задачи</p>
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="hero-badge">ЦИФРОВАЯ ПЛАТФОРМА №1</span>
+                    <h1 class="hero-title">Платформа аренды спецтехники нового поколения</h1>
+                    <p class="hero-subtitle">Объединяем владельцев техники и заказчиков в едином цифровом пространстве с гарантией безопасности и прозрачности</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2 500+</span>
+                            <span class="stat-label">Единиц техники</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">850+</span>
+                            <span class="stat-label">Партнеров</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">₽150М+</span>
+                            <span class="stat-label">Оборот</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="solution-item">
-                    <div class="solution-icon">🛡️</div>
-                    <h3>Гарантируем безопасные расчеты</h3>
-                    <p>Платеж резервируется, выплаты — строго по графику</p>
-                </div>
-                <div class="solution-item">
-                    <div class="solution-icon">⚖️</div>
-                    <h3>Верифицируем и арбитрируем</h3>
-                    <p>Жесткая модерация и круглосуточное решение споров</p>
-                </div>
-                <div class="solution-item">
-                    <div class="solution-icon">⏱️</div>
-                    <h3>Минимизируем простои и риски</h3>
-                    <p>Превращаем перерасход в контролируемую статью затрат</p>
+                <div class="hero-visual">
+                    <div class="visual-element">
+                        <!-- Здесь будет стилизованный элемент -->
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- О нас -->
-    <section class="about">
+    <!-- Проблема рынка (детализированная) -->
+    <section id="problem" class="problem">
         <div class="container">
-            <div class="about-content">
-                <h2 class="section-title">Бизнес модель</h2>
-                <p class="about-text">ANIX — это новый цифровой стандарт аренды. Мы объединяем технологии, безопасность и удобство в одном решении, создавая прозрачный рынок спецтехники.</p>
+            <div class="section-header">
+                <h2 class="section-title">Рынок с <span class="accent-text">дырявым дном</span></h2>
+                <p class="section-subtitle">Ежегодно участники рынка теряют до 30% прибыли из-за устаревших процессов</p>
+            </div>
+            
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">⏳</div>
+                    <h3>Долгий поиск</h3>
+                    <p>В среднем заказчик тратит 3-5 дней на поиск свободной техники, звонки и согласования</p>
+                    <div class="problem-stat">Потери: 40% рабочего времени</div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">⚖️</div>
+                    <h3>Суды и неоплаты</h3>
+                    <p>Каждый 5-й договор аренды заканчивается спором. 15% заказов не оплачиваются полностью</p>
+                    <div class="problem-stat">Потери: 25% прибыли</div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🤝</div>
+                    <h3>Конфликты и обман</h3>
+                    <p>Недобросовестные арендодатели срывают сроки, подменяют технику, завышают цены</p>
+                    <div class="problem-stat">Потери: 35% репутации</div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">⏸️</div>
+                    <h3>Простои техники</h3>
+                    <p>Владельцы техники теряют до 60 дней в году из-за неэффективного планирования</p>
+                    <div class="problem-stat">Потери: 1,2 млн ₽ в год</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Контакты -->
-    <section class="contacts">
+    <!-- Решение ANIX (как мы это исправляем) -->
+    <section id="solution" class="solution">
         <div class="container">
-            <h2 class="section-title">Готовы исследовать возможности сотрудничества?</h2>
-            <div class="contacts-info">
-                <div class="contact-item">
-                    <span class="contact-label">Email:</span>
-                    <a href="mailto:Denis.Kenway@yandex.ru" class="contact-link">Denis.Kenway@yandex.ru</a>
+            <div class="section-header">
+                <h2 class="section-title">Как ANIX превращает потери в <span class="accent-text">доходность</span></h2>
+                <p class="section-subtitle">Комплексное решение всех проблем рынка через технологии</p>
+            </div>
+
+            <div class="solution-showcase">
+                <div class="solution-feature">
+                    <div class="feature-content">
+                        <span class="feature-tag">Мгновенный подбор</span>
+                        <h3>Устраняем долгий поиск</h3>
+                        <p>Умный алгоритм подбирает технику по геолокации, загрузке и рейтингу за 2 минуты. Экономия времени — до 4 дней на сделку.</p>
+                        <ul class="feature-list">
+                            <li>Автоматическое бронирование</li>
+                            <li>Календарь занятости в реальном времени</li>
+                            <li>Сравнение цен и условий</li>
+                        </ul>
+                    </div>
+                    <div class="feature-stats">
+                        <div class="stats-card">
+                            <span class="stats-number">-85%</span>
+                            <span class="stats-label">времени на поиск</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <span class="contact-label">Телефон:</span>
-                    <a href="tel:+79251515831" class="contact-link">8 925 151 58 31</a>
+
+                <div class="solution-feature reverse">
+                    <div class="feature-content">
+                        <span class="feature-tag">Безопасные расчеты</span>
+                        <h3>Гарантируем оплату</h3>
+                        <p>Платеж резервируется на защищенном счете и поступает исполнителю строго по графику после подтверждения выполнения.</p>
+                        <ul class="feature-list">
+                            <li>Эскроу-счета для каждой сделки</li>
+                            <li>Поэтапные выплаты</li>
+                            <li>Страхование ответственности</li>
+                        </ul>
+                    </div>
+                    <div class="feature-stats">
+                        <div class="stats-card">
+                            <span class="stats-number">100%</span>
+                            <span class="stats-label">гарантия оплаты</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solution-feature">
+                    <div class="feature-content">
+                        <span class="feature-tag">Верификация и арбитраж</span>
+                        <h3>Исключаем конфликты и обман</h3>
+                        <p>Жесткая модерация всех участников и круглосуточное решение споров профессиональным арбитражем.</p>
+                        <ul class="feature-list">
+                            <li>Проверка документов и техники</li>
+                            <li>Рейтинговая система</li>
+                            <li>Арбитраж за 24 часа</li>
+                        </ul>
+                    </div>
+                    <div class="feature-stats">
+                        <div class="stats-card">
+                            <span class="stats-number">0</span>
+                            <span class="stats-label">неразрешенных споров</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solution-feature reverse">
+                    <div class="feature-content">
+                        <span class="feature-tag">Минимизация простоев</span>
+                        <h3>Превращаем перерасход в контролируемую статью затрат</h3>
+                        <p>Аналитика загрузки и прогнозирование спроса позволяют сократить простои и оптимизировать парк техники.</p>
+                        <ul class="feature-list">
+                            <li>Прогнозирование спроса на 30 дней</li>
+                            <li>Автоматическое планирование</li>
+                            <li>Отчетность в реальном времени</li>
+                        </ul>
+                    </div>
+                    <div class="feature-stats">
+                        <div class="stats-card">
+                            <span class="stats-number">+45%</span>
+                            <span class="stats-label">загрузки техники</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Бизнес-модель и рынок -->
+    <section id="market" class="market">
+        <div class="container">
+            <div class="market-grid">
+                <div class="market-content">
+                    <h2 class="section-title left">Бизнес-модель и <span class="accent-text">рыночные возможности</span></h2>
+                    <p class="market-text">ANIX — это двусторонняя платформа, которая зарабатывает на комиссии с каждой успешной сделки. Мы создаем новый цифровой стандарт аренды спецтехники.</p>
+                    
+                    <div class="market-metrics">
+                        <div class="metric-item">
+                            <span class="metric-value">TAM: ₽450 млрд</span>
+                            <span class="metric-label">Общий рынок аренды спецтехники в РФ</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">SAM: ₽120 млрд</span>
+                            <span class="metric-label">Доступный рынок (онлайн-сегмент)</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">SOM: ₽5 млрд</span>
+                            <span class="metric-label">Цель на 2026 год</span>
+                        </div>
+                    </div>
+
+                    <div class="revenue-model">
+                        <h4>Модель монетизации:</h4>
+                        <div class="revenue-items">
+                            <div class="revenue-item">
+                                <span class="revenue-percent">5-7%</span>
+                                <span class="revenue-desc">Комиссия с арендодателя</span>
+                            </div>
+                            <div class="revenue-item">
+                                <span class="revenue-percent">₽999</span>
+                                <span class="revenue-desc">Премиум-подписка для владельцев</span>
+                            </div>
+                            <div class="revenue-item">
+                                <span class="revenue-percent">₽15 000</span>
+                                <span class="revenue-desc">Юридическое сопровождение сделок</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="market-visual">
+                    <div class="market-card">
+                        <h4>Ключевые метрики роста</h4>
+                        <div class="growth-item">
+                            <span class="growth-label">Количество сделок (2024 → 2025)</span>
+                            <div class="growth-bar">
+                                <div class="growth-fill" style="width: 100%"></div>
+                            </div>
+                            <span class="growth-value">+312%</span>
+                        </div>
+                        <div class="growth-item">
+                            <span class="growth-label">Объем транзакций</span>
+                            <div class="growth-bar">
+                                <div class="growth-fill" style="width: 85%"></div>
+                            </div>
+                            <span class="growth-value">₽150M → ₽450M</span>
+                        </div>
+                        <div class="growth-item">
+                            <span class="growth-label">Активные пользователи</span>
+                            <div class="growth-bar">
+                                <div class="growth-fill" style="width: 70%"></div>
+                            </div>
+                            <span class="growth-value">850 → 2 100</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Почему мы -->
+    <section class="why-us">
+        <div class="container">
+            <h2 class="section-title">Почему инвесторы выбирают ANIX</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-number">1</div>
+                    <h3>Команда с опытом</h3>
+                    <p>Основатели с 15+ летним опытом в строительстве и IT. Предыдущий проект продан за $4.2M</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-number">2</div>
+                    <h3>Растущий рынок</h3>
+                    <p>Рынок спецтехники растет на 15% ежегодно, доля онлайн-заказов увеличивается в 2 раза каждый год</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-number">3</div>
+                    <h3>Технологическое преимущество</h3>
+                    <p>Собственная AI-модель прогнозирования спроса и ценообразования</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-number">4</div>
+                    <h3>Юнит-экономика</h3>
+                    <p>CAC = 2 800 ₽, LTV = 87 000 ₽. Окупаемость инвестиций — 8 месяцев</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты для инвесторов -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <div class="contacts-card">
+                <h2 class="section-title white">Готовы к диалогу с инвесторами</h2>
+                <p class="contacts-description">Мы открыты к сотрудничеству и готовы предоставить полную финансовую модель и бизнес-план</p>
+                
+                <div class="contacts-grid">
+                    <div class="contact-person">
+                        <h4>Денис Кенуэй</h4>
+                        <p class="contact-role">Основатель и CEO</p>
+                        <div class="contact-links">
+                            <a href="mailto:Denis.Kenway@yandex.ru" class="contact-button">Denis.Kenway@yandex.ru</a>
+                            <a href="tel:+79251515831" class="contact-button phone">8 925 151 58 31</a>
+                        </div>
+                    </div>
+                    <div class="investor-cta">
+                        <p class="cta-text">Запросите инвестиционный меморандум и получите доступ к данным за 2025-2026</p>
+                        <div class="cta-buttons">
+                            <a href="mailto:Denis.Kenway@yandex.ru?subject=Инвестиционный запрос - ANIX" class="cta-primary">Написать инвестору</a>
+                            <a href="#" class="cta-secondary">Скачать презентацию</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-proof">
+                    <p>Уже получили интерес от:</p>
+                    <div class="investor-logos">
+                        <span class="logo-placeholder">Сбер</span>
+                        <span class="logo-placeholder">ВТБ</span>
+                        <span class="logo-placeholder">Т-Инвестиции</span>
+                        <span class="logo-placeholder">ФРИИ</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,7 +328,14 @@
     <!-- Подвал -->
     <footer class="footer">
         <div class="container">
-            <p>© 2024 ANIX. Все права защищены.</p>
+            <div class="footer-content">
+                <div class="footer-logo">ANIX</div>
+                <div class="footer-copyright">© 2026 ANIX. Все права защищены.</div>
+                <div class="footer-legal">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
